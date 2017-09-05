@@ -1,0 +1,8 @@
+<div class="row">
+  <div class="col-sm-6">
+    <div *ngIf="hero">
+      <h2>{{ hero.name }} details!</h2> <br>
+      <div class="input-group"> <label class="input-group-addon">id: </label> <span class="form-control">{{ hero.id }}</span> </div> <br>
+      <div class="input-group"> <label class="input-group-addon" for="heroName">name: </label> <input [(ngModel)]="hero.name" id="heroName" placeholder="name" type="text" class="form-control" style="cursor: pointer;"> </div> <br> <button class="btn btn-primary" (click)="goBack()" style="cursor:pointer;">Back</button> <button class="btn btn-success" (click)="save()" style="cursor:pointer;">Save</button> </div>
+  </div>
+</div>

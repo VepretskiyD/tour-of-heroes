@@ -1,0 +1,13 @@
+<div class="row text-center">
+  <div class="col-sm-12">
+    <h3>Top Heroes</h3> <br> </div>
+</div>
+<div class="row justify-content-center">
+  <div style="width:33%; min-width:200px; max-width:300px; padding:5px;" *ngFor="let hero of heroes">
+    <div class="card">
+      <div class="card-body text-center">
+        <h4 class="card-title">{{hero.name}}</h4> <a [routerLink]="['/detail', hero.id]" class="btn btn-block btn-primary">View</a> </div>
+    </div>
+  </div>
+</div>
+<app-hero-search></app-hero-search>

@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="col-sm-12">
+    <div id="search-component">
+      <h4>Hero Search</h4>
+      <div class="form-group"> <input #searchBox id="search-box" (keyup)="search(searchBox.value)" type="text" class="form-control"> </div>
+      <div class="list-group"> <a *ngFor="let hero of heroes | async" (click)="gotoDetail(hero)" class="list-group-item list-group-item-action" style="cursor:pointer;">{{ hero.name }}</a> </div>
+    </div>
+  </div>
+</div>
